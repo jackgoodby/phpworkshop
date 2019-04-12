@@ -1,0 +1,12 @@
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 192.168.99.101.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: http://docker-registry.jx.192.168.99.101.nip.io:2375/team-neev/workshop
+    tag: "1.0"

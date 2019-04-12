@@ -1,0 +1,6 @@
+
+dependencies:
+
+- alias: preview
+  name: paul-preview
+  repository: file://..

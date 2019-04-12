@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: preview-env
+spec:
+  type: ExternalName
+  # Target service DNS name
+  externalName: preview-jenkins.jx.192.168.99.101.nip.io
+  ports:
+  - port: 80
+
